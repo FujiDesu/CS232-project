@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Sarabun', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #80CEC7, #93B8D2);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* ขยายให้เต็มพื้นที่ก่อน footer */
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-btn {
+  background: rgba(255, 255, 255, 0.125);
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+}
+
+.skill-box, .quiz-box, .recommend-box {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box h2, .quiz-box h2, .recommend-box h2 {
+  margin-top: 0;
+  color: #3B3B3B;
+}
+
+.skill-stats {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.circle-progress {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/*Text ในวงกลม*/
+.circle-text { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.skill-detail p {
+  margin: 0.5rem 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.primary {
+  background: rgb(255, 255, 255);
+  padding: 0.6rem 1.5rem;
+  border: none ;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(108, 108, 108, 0.5);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.green-btn {
+  background: #6DD89C;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.gray-btn {
+  background: #C0C0C0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.img-placeholder {
+  background: #EAEAEA;
+  height: 150px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  border-radius: 10px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.25); /* สีขาวจาง ๆ */
+  backdrop-filter: blur(12px);          /* ทำให้พื้นหลังเบลอ */
+  -webkit-backdrop-filter: blur(12px);  /* Safari รองรับ */ 
+  
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 1.25rem;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+
+
+/*เพิ่มเติมสำหรับ หน้าเพิ่มทักษะ*/
+.add-skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.back-icon {
+  background: white;
+  color: #3B3B3B;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.add-skill-form {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-item input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.file-label {
+  background: #f0f0f0;
+  padding: 0.75rem 1rem;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.full-width {
+  width: 100%;
+}
