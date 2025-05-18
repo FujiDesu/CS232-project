@@ -212,102 +212,120 @@ footer {
   width: 100%;
 }
 
-/*Detailed-skill*/
-* {
-  box-sizing: border-box;
-  font-family: 'Sarabun', sans-serif;
-}
+/*เพิ่มเติมสำหรับ หน้าแนะนำทักษะ*/
 
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #80CEC7, #93B8D2);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+      gap: 1rem;
+    }
 
-.container {
-  flex: 1;
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: transparent;
-}
+    .tab-btn {
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  color: white;
-}
+    .tab-btn.active {
+      background: #3B3B3B;
+      color: white;
+    }
 
-.add-skill-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: white;
-  margin-bottom: 1.5rem;
-}
+    .recommend-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
 
-.back-icon {
-  background: white;
-  color: #3B3B3B;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+    .recommend-item {
+      background: #F0F6F9;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      position: relative;
+      padding-bottom: 1rem;
+    }
 
-.user-icon {
-  font-size: 1.5rem;
-}
+    .recommend-item::before {
+      content: 'NEW';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #F6C700;
+      color: #3B3B3B;
+      font-weight: bold;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0 0 10px 0;
+    }
 
-.add-skill-form {
-  background: white;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .recommend-header {
+      height: 140px;
+      background: #D9E7EF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.img-placeholder {
-  background: #EAEAEA;
-  height: 200px;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden; /* ensures cropping */
-  padding: 0;
-}
+    .recommend-info {
+      padding: 1rem;
+      text-align: center;
+    }
 
-.skill-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* this crops the image */
-  display: block;
-}
+    .recommend-info h3 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #3B3B3B;
+    }
 
-.form-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-  color: #3B3B3B;
-}
+    .recommend-info p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
 
-footer {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  text-align: center;
-  color: #333;
-  font-size: 0.9rem;
-  padding: 1.25rem;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
-  width: 100%;
-}
+    .primary {
+      background: white;
+      padding: 0.6rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(108, 108, 108, 0.5);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-icon {
+      background: white;
+      color: #3B3B3B;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px;
+      font-size: 1.25rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .user-icon {
+      font-size: 1.5rem;
+      background: white;
+      padding: 0.4rem;
+      border-radius: 50%;
+    }
+
+    .top-btn-area {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .scroll-top-btn {
+      background: white;
+      padding: 0.6rem 2rem;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
