@@ -1,6 +1,18 @@
+@font-face {
+  font-family: 'SukhumvitSet';
+  src: url('../font/SukhumvitSet-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SukhumvitSet';
+  src: url('../font/SukhumvitSet-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'SukhumvitSet', sans-serif;
 }
 
 body {
@@ -8,7 +20,7 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #80CEC7, #93B8D2);
   min-height: 100vh;
-
+  font-family: 'SukhumvitSet', sans-serif;
   display: flex;
   flex-direction: column;
 }
