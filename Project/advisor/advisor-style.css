@@ -1,0 +1,359 @@
+/* ======= RESET & BASE ======= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background: linear-gradient(to bottom, #80CEC7, #93B8D2);
+  color: #3B3B3B;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======= HEADER ======= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-buttons .active {
+  background: white;
+  color: #3B3B3B;
+}
+
+.user-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ======= MAIN CONTAINER ======= */
+main {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+/* ======= STUDENT CARD BOX ======= */
+.student-card {
+  background: #ecf6f9;
+  width: 100%;
+  max-width: 960px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+/* ======= HEADER IN CARD ======= */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  font-size: 1.4rem;
+  color: white;
+  background: #8fc6d3;
+  border-radius: 16px;
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ======= STUDENT LIST PAGE ======= */
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.student-item {
+  background: #f7fafa;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.student-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e6f1f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.student-name {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.student-year {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ======= DETAIL PAGE STUDENT INFO ======= */
+.student-info-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.student-info-row .student-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.student-info-row .student-name {
+  font-size: 1.2rem;
+}
+
+.student-info-row .student-year {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* ======= STUDENT SUMMARY (DETAIL PAGE) ======= */
+.student-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.summary-left {
+  flex: 1;
+  text-align: center;
+}
+
+.summary-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.circle-progress {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#5BAA70 50%, #D1EAD1 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.summary-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.summary-right span {
+  float: right;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* สีเทาอ่อน */
+  margin: 1rem 0;
+}
+
+/* ======= CHECK BUTTON ======= */
+.check-btn {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(to right, #7be89c, #56d0b3);
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.check-btn-2 {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(to right, #ed634e, #c30303);
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.check-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 1.25rem;
+  margin-top: 3rem;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/*เพิ่มในส่วนของหน้า advisor-recommend*/
+/* ======= FILTER BUTTONS ======= */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.2rem;
+  background: #ffffff;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+  font-weight: bold;
+  color: #3B3B3B;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filter-buttons button.active {
+  background: #3B3B3B;
+  color: white;
+}
+
+/* ======= ACTIVITY GRID ======= */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.activity-card {
+  position: relative;
+  background: #e2ecf0;
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4ba3a7;
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.activity-img {
+  display: flex;
+  justify-content: center;
+}
+
+.activity-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+.activity-desc {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.skill {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
