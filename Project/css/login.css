@@ -51,7 +51,7 @@ button {
   padding: 0.75rem;
   border: none;
   border-radius: 12px;
-  background-color: #4CAF50; /* เขียวสด */
+  background: linear-gradient(to right, #4fe5a3, #38c6a0);
   color: white;
   font-weight: bold;
   font-size: 1rem;
