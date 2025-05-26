@@ -1,0 +1,21 @@
+/activities - GET getActivities
+/activities/{activityId} - GET getActivityDetail
+/activities/{activityId}/assessment - POST submitAssesment
+/activities/{activityId}/participants - GET 
+getActivityParticipants
+/activities/register - POST - registerActivity
+/activities/verify-qr - POST - verifyActivityCode
+/advisors/{advisorId}/students - GET - getAdvisorStudents
+/login - POST - login
+/quiz/questions/{skillId} - GET - 
+getQuizQuestions
+/quiz/submit - POST - 
+submitQuizAnswers
+/requiredSkills/{yearLevel} - GET -
+getRequiredSkills
+/skills/all - GET - 
+getAllSkills
+/students/{studentId}/activities - GET - getStudentActivities
+/students/{studentId}/info - GET - 
+getStudentInfo
+/students/{studentId}/skills - GET - getStudentSkills
